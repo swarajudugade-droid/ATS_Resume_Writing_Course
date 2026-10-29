@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Master ATS Resume Writing for Pharmacy Students – Course</title>
+<style>
+:root{--bg:#f6f4ee;--surface:#fff;--ink:#1d2b2a;--muted:#5b6b69;--line:#dcd8cb;--accent:#0f6b5c;--accent-ink:#fff;--accent-soft:#dff0ec;--gold:#b9831a;--gold-soft:#faf0d6;--ok:#17703b;--ok-soft:#dcf2e3;--bad:#b3261e;--bad-soft:#fbe3e1;--shadow:0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a19;--surface:#182423;--ink:#e8efed;--muted:#9db0ad;--line:#2e4240;--accent:#4cc3ab;--accent-ink:#06211c;--accent-soft:#1c3a35;--gold:#e0b04f;--gold-soft:#332a14;--ok:#6fd592;--ok-soft:#173826;--bad:#ff8f87;--bad-soft:#3d1c1a;--shadow:none}}
+:root[data-theme="dark"]{--bg:#111a19;--surface:#182423;--ink:#e8efed;--muted:#9db0ad;--line:#2e4240;--accent:#4cc3ab;--accent-ink:#06211c;--accent-soft:#1c3a35;--gold:#e0b04f;--gold-soft:#332a14;--ok:#6fd592;--ok-soft:#173826;--bad:#ff8f87;--bad-soft:#3d1c1a;--shadow:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;line-height:1.25}
+h2{font-size:1.9rem;margin:.2em 0 .3em}
+h3{font-size:1.25rem;margin:1.6em 0 .4em;color:var(--accent)}
+a{color:var(--accent)}
+code{background:var(--accent-soft);padding:1px 6px;border-radius:4px;font-size:.92em}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.top{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:8px 16px}
+.top .title{font-family:Georgia,serif;font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.95rem}
+.pbar{width:140px;height:8px;background:var(--line);border-radius:6px;overflow:hidden;flex:none}
+.pbar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.plabel{font-size:.8rem;color:var(--muted);flex:none}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn.big{padding:10px 20px;font-size:1.05rem}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+#menu{display:none}
+.wrap{display:flex;max-width:1200px;margin:0 auto}
+nav{width:270px;flex:none;padding:16px;position:sticky;top:50px;align-self:flex-start;max-height:calc(100vh - 50px);overflow-y:auto}
+nav a{display:flex;gap:8px;align-items:center;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:.93rem;line-height:1.3}
+nav a:hover{background:var(--accent-soft)}
+nav a[aria-current="page"]{background:var(--accent);color:var(--accent-ink);font-weight:600}
+nav .tick{margin-left:auto;font-size:.85rem}
+nav .sep{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 10px 4px}
+main{flex:1;min-width:0;padding:20px 24px 80px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--shadow);margin-bottom:18px}
+.tag{display:inline-block;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;background:var(--accent-soft);color:var(--accent);padding:2px 10px;border-radius:99px;font-weight:600}
+.muted{color:var(--muted)}
+.hero{background:linear-gradient(135deg,var(--accent),#0a3f37);color:#fff;border-radius:16px;padding:32px 28px;margin-bottom:18px}
+.hero h1{margin:.3em 0;font-size:2.1rem}
+.hero p{max-width:60ch;opacity:.93}
+.hero .btn.primary{background:#fff;color:#0a3f37;border-color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.mcard{display:block;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink);text-decoration:none}
+.mcard:hover{border-color:var(--accent)}
+.mcard b{font-family:Georgia,serif;display:block;margin:4px 0}
+.box{border-left:4px solid var(--gold);background:var(--gold-soft);padding:10px 14px;border-radius:0 10px 10px 0;margin:14px 0}
+.box>b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--gold);margin-bottom:2px}
+.box.do{border-color:var(--ok);background:var(--ok-soft)}.box.do>b{color:var(--ok)}
+.box.dont{border-color:var(--bad);background:var(--bad-soft)}.box.dont>b{color:var(--bad)}
+.box.tip{border-color:var(--accent);background:var(--accent-soft)}.box.tip>b{color:var(--accent)}
+.box ul{margin:.3em 0;padding-left:1.2em}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.93rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft)}
+.remember{background:var(--accent-soft);padding:12px 16px;border-radius:10px}
+.obj{background:var(--accent-soft);border-radius:12px;padding:12px 18px;margin:14px 0}
+.obj ul{margin:.3em 0;padding-left:1.2em}
+.keypts{border:2px dashed var(--gold);border-radius:12px;padding:12px 18px;margin:20px 0}
+.q{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;background:var(--surface)}
+.q legend{font-weight:600;padding:0 6px}
+.opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;margin:7px 0;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .l{font-weight:700;flex:none;width:1.4em}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt.correct{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt:disabled{cursor:default;opacity:1;color:var(--ink)}
+.opt .badge{margin-left:auto;font-size:.75rem;font-weight:700;flex:none;padding:1px 8px;border-radius:99px}
+.opt.correct .badge{background:var(--ok);color:var(--bg)}.opt.wrong .badge{background:var(--bad);color:var(--bg)}
+.why{margin-top:8px;font-size:.93rem;padding:8px 12px;border-radius:8px;background:var(--accent-soft)}
+.bigscore{font-family:Georgia,serif;font-size:3.2rem;font-weight:700;line-height:1}
+.verdict{display:inline-block;padding:4px 16px;border-radius:99px;font-weight:700;letter-spacing:.05em}
+.verdict.pass{background:var(--ok-soft);color:var(--ok)}.verdict.fail{background:var(--bad-soft);color:var(--bad)}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent)}
+.mrow{display:grid;grid-template-columns:minmax(120px,260px) 1fr 48px;gap:10px;align-items:center;margin:6px 0;font-size:.9rem}
+.sticky{position:sticky;top:52px;z-index:10;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin-bottom:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px}
+.modal>div{background:var(--surface);border-radius:14px;padding:22px;max-width:420px}
+.cert{border:8px double var(--gold);padding:36px 24px;text-align:center;background:var(--surface);border-radius:6px}
+.cert h2{font-size:2.2rem;margin:0}.cert .nm{font-family:Georgia,serif;font-size:2rem;border-bottom:2px solid var(--ink);display:inline-block;min-width:60%;margin:14px 0;padding:0 10px}
+input[type=text]{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:100%;max-width:420px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.filters .btn[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.foot{font-size:.8rem;color:var(--muted);margin-top:28px}
+@media (max-width:820px){
+ #menu{display:inline-block}
+ nav{position:fixed;left:0;top:50px;bottom:0;max-height:none;background:var(--surface);z-index:40;transform:translateX(-105%);transition:transform .2s;border-right:1px solid var(--line);width:min(290px,86vw)}
+ nav.open{transform:none}
+ main{padding:16px}
+ .cols{grid-template-columns:1fr}
+ .pbar{width:70px}.plabel{display:none}
+ .hero h1{font-size:1.6rem}
+ .mrow{grid-template-columns:1fr 60px;}.mrow .bar{grid-column:1/3;order:3}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{
+ body *{visibility:hidden}
+ #certArea,#certArea *{visibility:visible}
+ #certArea{position:absolute;left:0;top:0;width:100%}
+ .noprint{display:none!important}
+ body{background:#fff;color:#000}
+ .cert{background:#fff;color:#000;border-color:#b9831a}
+}
+</style>
+</head>
+<body>
+<header class="top">
+ <button class="btn" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+ <span class="title">ATS Resume Writing for Pharmacy Students</span>
+ <div class="pbar" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" id="pb"><i id="pbi"></i></div>
+ <span class="plabel" id="pl"></span>
+ <button class="btn" id="theme" aria-label="Toggle light or dark theme">Theme</button>
+</header>
+<div class="wrap">
+ <nav id="nav" aria-label="Course navigation"></nav>
+ <main id="main" tabindex="-1"></main>
+</div>
+<div id="modalRoot"></div>
+<script>
+var MODS=[];var EXAM=[];
+MODS.push({
+id:1, tag:"Level 1 · Basics", title:"Resume, ATS and what HR sees", mins:15,
+sub:"What a resume is for, how the sorting robot works, and the order in which HR reads.",
+obj:["Explain a resume as a one-page proof sheet, not a life story","Describe what an ATS really does (and the myth around it)","Trace the five steps of a resume's journey","State the order in which HR skims a resume"],
+body:`
+<h3>A resume is your one-page advertisement</h3>
+<p>Think of a medicine strip. In three seconds you know the name, strength, expiry and use. Your resume is your strip: who you are, what you can do, how fresh your skills are and which problems you solve. A resume gets you the <strong>interview</strong>; it does not get you the job.</p>
+<ul>
+<li><strong>Not your life story.</strong> One page for a fresher, only what helps this job.</li>
+<li><strong>Not a certificate album.</strong> Ten random certificates say less than one relevant project.</li>
+<li><strong>A proof sheet.</strong> Every line must prove you can do the job you are applying for.</li>
+</ul>
+<h3>What is an ATS? A sorting robot</h3>
+<p>A school gets 2,000 admission forms. A machine reads every form, pulls out name, marks and subjects, and sorts them into piles. An <strong>Applicant Tracking System (ATS)</strong> is that machine for jobs. Companies use systems such as Workday, Oracle Taleo, iCIMS and Greenhouse, plus the job portals' own tools.</p>
+<div class="box tip"><b>Pharmacy analogy</b>A barcode scanner at the drug store. If the barcode is smudged (fancy design, tables, images), the scanner cannot read it, even if the medicine inside is perfect.</div>
+<div class="box myth"><b>Myth vs record</b>The popular claim that an ATS rejects 75 percent of resumes has no reliable public evidence. Most ATS do not delete you by magic: they store and rank resumes, and recruiters search by keywords. The real risk is that an unreadable or keyword-poor resume is parsed wrongly and <em>never gets found</em>.</div>
+<h3>Your resume's journey in five steps</h3>
+<table><tr><th>Step</th><th>What happens</th><th>What it needs from you</th></tr>
+<tr><td>1 Upload</td><td>PDF or DOCX goes into the portal</td><td rowspan="2">A plain, one-column format the robot can read</td></tr>
+<tr><td>2 Parse</td><td>Robot extracts name, jobs, skills, dates</td></tr>
+<tr><td>3 Match</td><td>Your words are compared with the job description</td><td rowspan="2">The exact words of the job description, used honestly</td></tr>
+<tr><td>4 Search</td><td>Recruiter filters: "HPLC", "GMP", city, degree</td></tr>
+<tr><td>5 Human reads</td><td>HR gives a few seconds to each shortlisted resume</td><td>A clear story that is easy to skim and true</td></tr></table>
+<p>It works like a drug moving through the supply chain: a failure at any step stops the product reaching the end.</p>
+<h3>HR skims in a fixed order</h3>
+<ol><li>Name and headline</li><li>Education and registration</li><li>Training or experience</li><li>Skills and keywords</li><li>Proof: projects and certificates</li></ol>
+<p>HR's silent questions: <strong>Role fit</strong> (do you match the title?), <strong>Eligibility</strong> (degree, year, State Pharmacy Council registration), <strong>Hands-on</strong> (have you really used HPLC, GMP, SOPs?), <strong>Safety</strong> (will you respect compliance and honesty?) and <strong>Ease</strong> (can I understand this quickly?).</p>
+<div class="box myth"><b>Rule of thumb, not law</b>The "6 to 8 seconds" figure often quoted is a rule of thumb, not an exact law. The lesson is the same: the top third of page one does most of the work. For hospital, retail and government pharmacist roles, State Pharmacy Council registration is a first-pass filter.</div>`,
+key:["A resume is a one-page proof sheet that earns an interview, not the job","An ATS stores and ranks resumes; recruiters find you by keyword search","The \"75 percent auto-rejected\" claim has no reliable public evidence","Journey: upload, parse, match, search, human reads","HR reads name/headline, education and registration, experience, skills, proof"],
+check:[
+{q:"What is the best description of a resume according to the course?",o:["A one-page proof sheet for the job you are applying to","A full story of your life and achievements","An album of every certificate you have earned","A list of subjects you studied in college"],w:"A resume is a proof sheet: every line must prove you can do this particular job. Piling on certificates or life details weakens it."},
+{q:"What does an ATS (Applicant Tracking System) mainly do?",o:["Stores and ranks resumes so recruiters can search them","Automatically deletes 75 percent of applicants","Interviews candidates on the phone","Checks degree certificates with universities"],w:"Most ATS store and rank resumes. They rarely delete by magic; the real risk is that your resume is not found in a keyword search."},
+{q:"In the barcode-scanner analogy, what is the 'smudged barcode'?",o:["A fancy design with tables or images the robot cannot read","A resume that is too short","A missing phone number","A resume saved with the wrong date"],w:"Fancy design, tables and images smudge the barcode, so the parser cannot read the good content inside."},
+{q:"In which step does the robot extract your name, jobs, skills and dates?",o:["Parse","Upload","Search","Human reads"],w:"Parsing is the extraction step. That is why a plain one-column format matters."},
+{q:"Which item does HR look at first when skimming?",o:["Name and headline","Certificates","Skills list","Hobbies"],w:"HR reads name and headline first, then education and registration, experience, skills and finally proof."}
+]});
+MODS.push({
+id:2, tag:"Level 2 · Build it", title:"Format and sections", mins:12,
+sub:"Format rules a robot can read, and which sections go where for freshers and experienced candidates.",
+obj:["List the format rules that keep a resume ATS-readable","Name what to avoid in an ATS resume","Order resume sections correctly for a fresher","Explain why two versions of a resume are useful"],
+body:`
+<h3>Format rules the robot can read</h3>
+<div class="cols">
+<div class="box do"><b>Do</b><ul><li>One column, top to bottom</li><li>Plain headings: Education, Experience, Projects, Skills, Certifications</li><li>Arial or Calibri, 10 to 12 pt</li><li>Text-based PDF or DOCX, never a scan</li><li>Dates like "Jun 2025 – Aug 2025"</li><li>File name: <code>Name_Role.pdf</code></li></ul></div>
+<div class="box dont"><b>Avoid</b><ul><li>Tables, text boxes, two columns</li><li>Skill bars, star ratings, icons</li><li>Contact details inside header or footer</li><li>Photo or fancy template on job portals</li><li>Creative headings like "My Journey"</li><li>Pages of paragraphs</li></ul></div></div>
+<p><strong>Two versions:</strong> upload the plain ATS version to portals. Use a designed version (photo, sidebar) only for email, campus drives and print.</p>
+<div class="box tip"><b>Lab-notebook analogy</b>A lab notebook has ruled lines and standard headings so anyone can find the data. A parser likes the same predictability. A parser reading two columns may mix your skills into your job history.</div>
+<h3>Sections and their order</h3>
+<div class="tw"><table><tr><th>Section</th><th>Fresher (0 to 2 years)</th><th>Experienced</th></tr>
+<tr><td>Header</td><td>Name, city, phone, email, LinkedIn</td><td>Same, plus a target-role headline</td></tr>
+<tr><td>Summary</td><td>2 to 3 lines: degree, focus, target role</td><td>3 lines: years, domain, proof</td></tr>
+<tr><td>Education</td><td>Second, with CGPA and coursework</td><td>After experience</td></tr>
+<tr><td>Registration and exams</td><td>State Pharmacy Council, GPAT</td><td>Registration number or status</td></tr>
+<tr><td>Training or experience</td><td>Industrial training, internships</td><td>First, newest to oldest</td></tr>
+<tr><td>Projects</td><td>Two or three relevant ones</td><td>Only if relevant</td></tr>
+<tr><td>Skills</td><td>Grouped: analytical, compliance, software</td><td>Grouped and trimmed to the job</td></tr>
+<tr><td>Certifications</td><td>GCP, GMP, data, language</td><td>Recent and relevant only</td></tr>
+<tr><td>Achievements</td><td>Posters, awards, leadership</td><td>Publications, patents</td></tr></table></div>
+<p><strong>Rule of thumb:</strong> the section that best proves you can do the job goes first. For a fresher with no experience, education and projects carry the resume. Hospital, retail and government pharmacist roles should show registration early.</p>`,
+key:["One column, plain headings, text-based PDF/DOCX, Arial or Calibri 10 to 12 pt","Avoid tables, text boxes, skill bars, photos and header/footer contact details on portals","Keep a plain ATS version for portals and a designed one for email, campus and print","Fresher: summary, education, training, projects, skills; experienced: experience first","Name the file Name_Role.pdf and put the best proof section first"],
+check:[
+{q:"Which font size range does the course recommend?",o:["10 to 12 pt in Arial or Calibri","6 to 8 pt in a decorative font","14 to 18 pt in a script font","Any size, as long as it looks attractive"],w:"Plain fonts (Arial, Calibri) at 10 to 12 pt are easy for both parsers and humans."},
+{q:"Where should contact details NOT be placed in an ATS resume?",o:["Inside the header or footer","At the very top of the body text","Next to the name","In the first section"],w:"Parsers often skip headers and footers, so your phone and email may never be read."},
+{q:"When is the designed version (photo, sidebar) appropriate?",o:["For email, campus drives and print","For uploading to every job portal","Never, under any circumstance","Only for government jobs"],w:"Upload the plain version to portals; the designed version suits human-only channels."},
+{q:"For a fresher, what comes second in the recommended section order (after Header and Summary)?",o:["Education, with CGPA and coursework","Achievements","Certifications","Skills"],w:"In the table, the fresher's order starts Header, Summary, Education, then registration, training, projects, skills."},
+{q:"What is the correct way to name your resume file?",o:["Name_Role.pdf","resume_final_final2.pdf","scan0001.pdf","MyJourney.pdf"],w:"A clear file name with your name and target role helps the recruiter and shows professionalism."}
+]});
+
+MODS.push({
+id:3, tag:"Level 2 · Build it", title:"Keywords, bullets and mistakes", mins:15,
+sub:"Match the job's words honestly, write bullets with the action-task-tool-result formula, and avoid six common mistakes.",
+obj:["Match resume keywords to a job description honestly","Write a bullet using the four-part formula","Turn weak lines into strong lines for different roles","Recognise six mistakes pharmacy students make"],
+body:`
+<h3>Keywords are keys. The job is the lock.</h3>
+<p>If the lock says "HPLC" and your key says "chromatography machine", it will not turn. Use the same word the job uses.</p>
+<div class="cols"><div class="box"><b>Job description (example)</b>Perform HPLC and UV analysis of finished products. Follow GLP and SOPs. Record data in logbooks. Support OOS and deviation investigations.</div>
+<div class="box do"><b>Your matching bullet (only if true)</b>Performed HPLC assay and UV analysis of tablets as per SOPs and GLP; recorded results in analytical logbooks.</div></div>
+<ul><li>Write the full form once: "Good Manufacturing Practice (GMP)".</li><li>Use keywords in both Skills and bullets, never in hidden white text.</li><li>Never add a keyword you cannot defend in an interview.</li></ul>
+<p>If the job asks for something you have not done, show the closest real skill, or learn it with a free course.</p>
+<h3>The bullet formula</h3>
+<p>A good prescription line has drug, dose, route and frequency. A good bullet has fixed parts too:</p>
+<p><strong>1 Action</strong> (strong verb) + <strong>2 Task</strong> (what you did) + <strong>3 Tool</strong> (method or standard) + <strong>4 Result</strong> (output or scale).</p>
+<div class="box do"><b>Example</b>Validated a UV method for metformin HCl using ICH Q2(R1) parameters, with linearity r² of 0.999 across 2 to 12 µg/mL.</div>
+<p><strong>Starter verbs:</strong> Performed, Validated, Calibrated, Documented, Screened, Coded, Reviewed, Dispensed, Counselled, Formulated, Analysed, Presented.</p>
+<p><strong>No numbers?</strong> Use scale that is true: "for 3 batches", "in 40 prescriptions". Never invent a figure.</p>
+<h3>Before and after, by job role</h3>
+<div class="tw"><table><tr><th>Role</th><th>Weak line</th><th>Strong line</th></tr>
+<tr><td>QC Analyst</td><td>Did HPLC work</td><td>Ran HPLC assay of paracetamol tablets, checked system suitability and recorded data as per GLP</td></tr>
+<tr><td>Pharmacovigilance</td><td>Worked on ADRs</td><td>Screened ADR forms for completeness, assessed causality with WHO-UMC and Naranjo scales, coded events in MedDRA</td></tr>
+<tr><td>Hospital pharmacist</td><td>Helped in pharmacy</td><td>Dispensed prescriptions under supervision, checked expiry dates, counselled patients on dose and timing</td></tr>
+<tr><td>Medical Rep</td><td>Visited doctors</td><td>Detailed 3 products to doctors on a weekly territory plan and submitted call reports</td></tr></table></div>
+<p>These are patterns to copy. Replace the details with what you really did.</p>
+<h3>Six mistakes pharmacy students make</h3>
+<table><tr><th>Mistake</th><th>Why / fix</th></tr>
+<tr><td>Fancy design</td><td>Smudged barcode. Use a plain version for portals.</td></tr>
+<tr><td>One resume for all</td><td>QC and PV need different words. Tailor each time.</td></tr>
+<tr><td>Keyword stuffing</td><td>Lists of 60 tools. Keep only what you can explain.</td></tr>
+<tr><td>Inflated claims</td><td>Background checks exist, and in pharma honesty is a compliance value.</td></tr>
+<tr><td>Typos in drug names</td><td>A wrong name is a red flag, like a labelling error. Proofread aloud.</td></tr>
+<tr><td>Paragraphs, no proof</td><td>Use short bullets with action, tool and result.</td></tr></table>`,
+key:["Use the job's exact words, with the full form written once, and only if true","Bullet = Action + Task + Tool + Result","No numbers? Use true scale such as \"for 3 batches\"; never invent figures","Weak lines like \"Did HPLC work\" become specific, standard-based lines","Six mistakes: fancy design, one resume for all, stuffing, inflated claims, drug-name typos, paragraphs"],
+check:[
+{q:"Which is the four-part bullet formula?",o:["Action, Task, Tool, Result","Name, Date, Place, Marks","Situation, Task, Action, Result","Problem, Cause, Fix, Review"],w:"Action + Task + Tool + Result. (Situation-Task-Action-Result is STAR, used for interview stories.)"},
+{q:"You have no measurable result for a bullet. What does the course advise?",o:["Use a true scale such as \"for 3 batches\"","Invent a plausible percentage","Delete the bullet entirely","Add hidden keywords instead"],w:"Never invent a figure. True scale (batches, prescriptions) still gives the reader a sense of size."},
+{q:"Which is hidden-text keyword use, and why is it wrong?",o:["Keywords in white text; both systems and humans catch it","Keywords in the Skills section; it is too obvious","Keywords in bullets; it is not allowed","Full forms of abbreviations; they confuse parsers"],w:"Hidden white text is caught by systems and humans. Honest matching in Skills and bullets is the goal."},
+{q:"Which is the STRONG line for a Pharmacovigilance role?",o:["Screened ADR forms for completeness, assessed causality with WHO-UMC and Naranjo scales, coded events in MedDRA","Worked on ADRs","Helped in the PV department","Good at drug safety"],w:"The strong line has action, task, tools (WHO-UMC, Naranjo, MedDRA) and clear scope."},
+{q:"Why is a typo in a drug name especially harmful on a pharmacy resume?",o:["A wrong name signals carelessness, like a labelling error","Parsers cannot read drug names","It lowers your CGPA","It breaks the PDF"],w:"In pharmacy a wrong name is a red flag; it signals carelessness before the interview even starts."}
+]});
+MODS.push({
+id:4, tag:"Level 2 · Build it", title:"Skills for each role and soft-skill receipts", mins:14,
+sub:"Which hard skills and search words fit each pharmacy domain, and how to prove soft skills.",
+obj:["Match hard skills and HR search words to pharmacy domains","Apply the rule about listing tools honestly","Name six soft skills HR looks for","Convert a weak soft-skill claim into a receipt line"],
+body:`
+<h3>Industry roles: what to show</h3>
+<div class="tw"><table><tr><th>Domain</th><th>Hard skills to show</th><th>Words HR searches</th></tr>
+<tr><td>Quality Control</td><td>HPLC, GC, UV, dissolution, titration, stability, calibration</td><td>GLP, SOP, OOS, logbook, USP, IP</td></tr>
+<tr><td>Quality Assurance</td><td>Documentation, deviation, change control, CAPA, audits</td><td>GMP, QMS, CAPA, batch record, audit</td></tr>
+<tr><td>Production</td><td>Granulation, compression, coating, line clearance, BMR</td><td>Tablets, capsules, injectables, cGMP</td></tr>
+<tr><td>R&amp;D / Formulation</td><td>Preformulation, excipients, DoE, method development</td><td>QbD, DoE, ICH Q8, scale-up, stability</td></tr>
+<tr><td>Regulatory Affairs</td><td>Dossier basics, labelling, variations, guideline reading</td><td>CTD, eCTD, CDSCO, ICH, ANDA</td></tr>
+<tr><td>Pharmacovigilance</td><td>Case intake, causality, narratives, coding</td><td>ICSR, MedDRA, WHO-UMC, Argus</td></tr>
+<tr><td>Clinical Research</td><td>Protocol reading, CRF, informed consent, site files</td><td>ICH-GCP, CRA, CTRI, eTMF</td></tr>
+<tr><td>Hospital / Retail</td><td>Dispensing, counselling, stock, prescription checks</td><td>Registered pharmacist, OPD, ADR</td></tr>
+<tr><td>Medical Rep / Sales</td><td>Detailing, territory plan, call reports, market survey</td><td>Doctor calls, stockist, CME, FMCG</td></tr></table></div>
+<div class="box tip"><b>Tip</b>Pick the one or two rows that match your target and show only those, with proof from training or projects. Always confirm against the actual job description, because the same title can ask for different tools in different companies.</div>
+<div class="box myth"><b>"I never used the tool. Can I list it?"</b>Only if you used it in training, lab or a course. Argus is an example: list a tool only if you have used it or trained on it. Otherwise write "familiar with the concepts" or learn it through a free course.</div>
+<h3>Six soft skills HR looks for</h3>
+<ul>
+<li><strong>Attention to detail</strong>: 0.5 mg versus 5 mg. One decimal changes everything.</li>
+<li><strong>Integrity</strong>: record what happened, even when the result is bad.</li>
+<li><strong>Communication</strong>: counselling a patient or writing a clear deviation report.</li>
+<li><strong>Teamwork</strong>: a batch passes through many hands: production, QC, QA.</li>
+<li><strong>Learning agility</strong>: guidelines change every year. Can you pick up new ones?</li>
+<li><strong>Ownership and time</strong>: deadlines are real: stability pulls, submission dates.</li>
+</ul>
+<p>In regulated industries, integrity and attention to detail are not only soft skills; they are compliance requirements.</p>
+<h3>Do not claim it. Show a receipt.</h3>
+<p>A medicine claims to work, but the clinical trial is the receipt. Employers trust evidence more than adjectives.</p>
+<div class="tw"><table><tr><th>Weak claim</th><th>Receipt line (write only what is true)</th></tr>
+<tr><td>Good communicator</td><td>Presented a poster on ADR monitoring at a state-level conference and answered panel questions</td></tr>
+<tr><td>Team player</td><td>Led 10 student volunteers in a diabetes and BP screening camp</td></tr>
+<tr><td>Detail oriented</td><td>Checked expiry dates and stock registers weekly during hospital training</td></tr>
+<tr><td>Quick learner</td><td>Completed an ICH-GCP online course and applied it in a protocol review project</td></tr></table></div>
+<p><strong>STAR in one line:</strong> Situation, Task, Action, Result. Use it in interviews to tell the story behind each receipt.</p>`,
+key:["Show only the one or two domain rows that match your target","List a tool only if you used it or trained on it; otherwise say \"familiar with the concepts\"","Six soft skills: detail, integrity, communication, teamwork, learning agility, ownership","Replace adjectives with receipt lines that are true","STAR = Situation, Task, Action, Result"],
+check:[
+{q:"Which set of words would a recruiter search for a Quality Assurance role?",o:["GMP, QMS, CAPA, batch record, audit","ICSR, MedDRA, WHO-UMC, Argus","CTD, eCTD, CDSCO, ANDA","Doctor calls, stockist, CME, FMCG"],w:"GMP, QMS, CAPA, batch record and audit are the QA search words. The other sets belong to PV, Regulatory Affairs and Sales."},
+{q:"You have never used the software Argus. What should you do?",o:["Write \"familiar with the concepts\" or learn it through a free course","List it anyway; recruiters search for it","Hide it in white text","Replace it with another software you have not used"],w:"List a tool only if you used it in training, lab or a course. Honesty is a compliance value in pharma."},
+{q:"Which soft skill is illustrated by \"0.5 mg versus 5 mg\"?",o:["Attention to detail","Teamwork","Learning agility","Communication"],w:"One decimal changes the dose tenfold, which is why attention to detail matters so much in pharmacy."},
+{q:"Which is a proper 'receipt' for being a team player?",o:["Led 10 student volunteers in a diabetes and BP screening camp","Very good team player","Always cooperative with everyone","Hardworking and sincere"],w:"A receipt gives a verifiable action with a number or setting; adjectives do not."},
+{q:"What does STAR stand for in the course?",o:["Situation, Task, Action, Result","Skill, Training, Award, Reference","Study, Test, Analyse, Report","Summary, Title, Address, Resume"],w:"STAR is the interview storytelling frame behind each receipt line."}
+]});
+
+MODS.push({
+id:5, tag:"Level 3 · Stand out", title:"What makes you different: languages and USP", mins:15,
+sub:"Add layers to your pharmacy core: a language, and knowledge of USP chapters shown honestly.",
+obj:["Describe the layered 'coated tablet' idea of standing out","Pick a language that opens doors and list it honestly","Name key USP chapters and what they cover","Use the Aware / Used / Applied levels without overclaiming"],
+body:`
+<h3>What makes you different?</h3>
+<p>Many applicants share the same degree, marks and "GMP awareness". All tablets contain the API, but the coating makes one different. Add layers on top of your pharmacy core:</p>
+<ul><li><strong>The core:</strong> your B.Pharm or M.Pharm. Everyone has this; it gets you into the pool.</li>
+<li><strong>Compliance literacy:</strong> USP chapters, data integrity, FDA inspection data.</li>
+<li><strong>Data skills:</strong> Excel, Power BI dashboards, Six Sigma thinking.</li>
+<li><strong>Language:</strong> German, Japanese, Chinese, or an Indian regional language.</li>
+<li><strong>Public-evidence projects:</strong> trial registries, warning letters, free certificates.</li>
+</ul>
+<p>You do not need every layer. Pick one or two that fit your target role and go deep. This gives a <em>T-shaped profile</em>: strong pharmacy core plus one visible extra skill.</p>
+<h3>Language advantage</h3>
+<div class="tw"><table><tr><th>Language</th><th>Where it opens doors</th><th>Proof to list</th></tr>
+<tr><td>German</td><td>German and Swiss pharma, plus Germany-linked sites and studies</td><td>Goethe-Institut level, A1 to C2</td></tr>
+<tr><td>Japanese</td><td>Japanese pharma companies and their Indian units</td><td>JLPT level, N5 (basic) to N1</td></tr>
+<tr><td>Chinese</td><td>API and CRO partners, sourcing and audits</td><td>HSK level</td></tr>
+<tr><td>Marathi, Hindi, Kannada, Tamil, others</td><td>Medical rep territories, patient counselling, trial consent in local language</td><td>"Fluent (spoken, written)"</td></tr></table></div>
+<p><strong>Honest line:</strong> "German: A2 (Goethe-Institut, 2026)" or "Japanese: studying for JLPT N5". Beginner level is fine when it is true. A language is a tiebreaker, not a replacement for pharmacy skills. In India, informed consent for trials must be in a language the participant understands, so regional languages have real value.</p>
+<p><strong>Free places to start:</strong> DW Learn German (learngerman.dw.com), Goethe-Institut (goethe.de), NHK Easy Japanese (nhk.or.jp/lesson/en), JLPT information (jlpt.jp), HSK information (chinesetest.cn), Duolingo (duolingo.com). Learn 20 pharmacy words first (tablet, dose, batch, quality). Learning content is often free, but official exams and certificates usually cost money.</p>
+<h3>USP: the shared rulebook for medicines</h3>
+<p>If every baker had their own idea of "one cup", the same cake would taste different. The <strong>United States Pharmacopeia (USP)</strong> says exactly what "one cup" means for a medicine: strength, purity and how to test it.</p>
+<div class="tw"><table><tr><th>Chapter</th><th>Topic</th><th>Why know it</th></tr>
+<tr><td>&lt;621&gt;</td><td>Chromatography</td><td>Every HPLC and GC method</td></tr>
+<tr><td>&lt;711&gt;</td><td>Dissolution</td><td>Release testing of tablets</td></tr>
+<tr><td>&lt;905&gt;</td><td>Uniformity of dosage units</td><td>Content and weight variation</td></tr>
+<tr><td>&lt;1225&gt;</td><td>Validation of compendial procedures</td><td>Accuracy, precision, linearity</td></tr>
+<tr><td>&lt;1058&gt;</td><td>Analytical instrument qualification</td><td>DQ, IQ, OQ, PQ</td></tr>
+<tr><td>&lt;71&gt;</td><td>Sterility tests</td><td>Injectables and ophthalmics</td></tr>
+<tr><td>&lt;232&gt; and &lt;233&gt;</td><td>Elemental impurities</td><td>Heavy-metal limits and methods</td></tr></table></div>
+<div class="box tip"><b>Trick</b>Chapters numbered below 1000 are enforceable requirements. Numbers above 1000 are guidance.</div>
+<p>Indian students should also know the Indian Pharmacopoeia (IP), British Pharmacopoeia and Ph. Eur. Always read the current official text for exact wording.</p>
+<h3>Show USP knowledge without overclaiming</h3>
+<table><tr><th>Level</th><th>Meaning</th><th>Wording</th></tr>
+<tr><td>A · Aware</td><td>Read the monograph and chapter</td><td>"familiar with"</td></tr>
+<tr><td>B · Used</td><td>Followed it in a lab practical</td><td>"followed"</td></tr>
+<tr><td>C · Applied</td><td>Used it to solve a real problem</td><td>"applied"</td></tr></table>
+<p>Example: <em>Compared dissolution of 3 formulations using USP &lt;711&gt; Apparatus 2 conditions.</em> Interviewers often ask a follow-up on whichever chapter you list. The full USP-NF is a subscription product, so use institutional or library access, plus free webinars and public documents on usp.org.</p>`,
+key:["Add a layer to your pharmacy core: compliance, data, language or public-evidence projects","Beginner language levels are fine when stated truthfully (Goethe A2, JLPT N5, HSK)","USP chapters below 1000 are enforceable; above 1000 are guidance","<621> chromatography, <711> dissolution, <905> uniformity, <1225> validation, <1058> qualification, <71> sterility, <232>/<233> elemental impurities","Aware = familiar with; Used = followed; Applied = solved a real problem"],
+check:[
+{q:"In the coated-tablet analogy, what does the coating represent?",o:["The extra skills layered on top of your pharmacy degree","The paper quality of your resume","Your college name","Your CGPA"],w:"All tablets contain the API (your degree). The coating (language, data, compliance skills) is what makes you different."},
+{q:"Which proof would you list for Japanese language learning?",o:["JLPT level, from N5 to N1","Goethe-Institut level","HSK level","Any hobby club certificate"],w:"JLPT is the Japanese exam (N5 basic to N1). Goethe is German and HSK is Chinese."},
+{q:"USP <711> deals with which topic?",o:["Dissolution","Chromatography","Sterility tests","Elemental impurities"],w:"<711> is dissolution, used for release testing of tablets. <621> is chromatography, <71> sterility."},
+{q:"What does the course say about USP chapter numbers?",o:["Below 1000 are enforceable requirements; above 1000 are guidance","Above 1000 are enforceable; below 1000 are guidance","All chapters are merely guidance","All chapters are enforceable"],w:"This trick helps you tell requirements (below 1000) from guidance (above 1000)."},
+{q:"You only read USP <711> in the library. Which verb is honest?",o:["Familiar with","Applied","Mastered","Validated"],w:"Aware level means read; use \"familiar with\". \"Followed\" needs lab use and \"applied\" needs a real problem solved."}
+]});
+MODS.push({
+id:6, tag:"Level 3 · Stand out", title:"Data integrity, Power BI and Six Sigma", mins:16,
+sub:"Records you can trust, real failure patterns, dashboards, and variation control, plus free ways to learn.",
+obj:["Explain data integrity and the ALCOA+ attributes","Recognise common data-integrity failures","Use Power BI and Six Sigma ideas in a project line","Find free sources to learn each topic"],
+body:`
+<h3>Data integrity: records you can trust</h3>
+<p>An attendance register only works if you sign for yourself, in pen, at the time, with no whitener, and the page cannot go missing. If anyone fills it in later or erases absences, nobody can trust the school's records. Lab data is the same.</p>
+<h3>ALCOA+ in one glance</h3>
+<table><tr><th>Letter</th><th>Word</th><th>Meaning</th></tr>
+<tr><td>A</td><td>Attributable</td><td>Who did it and when</td></tr>
+<tr><td>L</td><td>Legible</td><td>Readable, permanent</td></tr>
+<tr><td>C</td><td>Contemporaneous</td><td>Recorded at the time</td></tr>
+<tr><td>O</td><td>Original</td><td>First record or true copy</td></tr>
+<tr><td>A</td><td>Accurate</td><td>Correct, no errors hidden</td></tr>
+<tr><td>+</td><td>Complete, Consistent, Enduring, Available</td><td>The extension from industry and regulators</td></tr></table>
+<p>It applies to paper and electronic data, including audit trails and instrument printouts.</p>
+<h3>Real-world failures to learn from</h3>
+<p>Patterns that FDA inspection reports and warning letters have described again and again:</p>
+<ul><li><strong>Testing into compliance:</strong> re-running a failing sample until it passes, without a documented reason.</li>
+<li><strong>Shared logins:</strong> one password for all analysts, so nobody is attributable.</li>
+<li><strong>Deleted or hidden files:</strong> failed chromatograms removed, audit trail switched off.</li>
+<li><strong>Backdating:</strong> signing records for work not yet done, or done earlier.</li>
+<li><strong>Scrap-paper data:</strong> writing results on loose sheets and copying neatly later.</li></ul>
+<div class="box do"><b>What you do</b>Record at the time, sign only for yourself, report errors openly.</div>
+<h3>Read the source, then write the line</h3>
+<ul><li>FDA: <em>Data Integrity and Compliance With Drug CGMP, Questions and Answers</em> (search the title on fda.gov; published December 2018)</li>
+<li>21 CFR Part 211 (drug cGMP) and 21 CFR Part 11 (electronic records) on ecfr.gov</li>
+<li>WHO guideline on data integrity (TRS 1033, Annex 4)</li>
+<li>MHRA GxP data integrity guidance (gov.uk)</li></ul>
+<p>Resume lines: <em>Followed ALCOA principles while recording analytical data in lab logbooks.</em> / <em>Completed a self-study review of the FDA data integrity Q&amp;A guidance and summarised 10 key points.</em></p>
+<h3>Power BI and Six Sigma in plain words</h3>
+<div class="cols"><div class="box"><b>Power BI</b>Excel is a pile of receipts; Power BI is a car dashboard with a speedometer, fuel gauge and warning lights. Use it for OOS and deviation trends by month, CAPA closure ageing, batch yield and stability data, PV case volume, or territory sales.</div>
+<div class="box"><b>Six Sigma</b>Make every tablet nearly the same. If weights scatter widely, some tablets are too weak or too strong; Six Sigma shrinks the scatter. <b>DMAIC</b>: Define, Measure, Analyse, Improve, Control. Tools: Pareto, fishbone, 5-Why. Metrics: Cp, Cpk, DPMO. Belts: White, Yellow, Green, Black.</div></div>
+<p>Power BI shows <em>what happened</em>; Six Sigma helps decide <em>what to fix</em>.</p>
+<div class="box do"><b>Resume line</b>Built a Power BI dashboard of 12 months of dissolution results and flagged batches near the limit using a Pareto chart.</div>
+<h3>Learn it free, then build a project</h3>
+<table><tr><th>Resource</th><th>What you get</th></tr>
+<tr><td>Microsoft Learn: Power BI training</td><td>Free self-paced learning paths</td></tr>
+<tr><td>Power BI Desktop</td><td>Free app to build reports (Windows)</td></tr>
+<tr><td>GoLeanSixSigma White Belt</td><td>Free training and certificate</td></tr>
+<tr><td>Alison</td><td>Free Lean Six Sigma courses</td></tr>
+<tr><td>openFDA (open.fda.gov)</td><td>Free public drug event and recall data</td></tr></table>
+<p><strong>Mini-project:</strong> download drug recall data from openFDA, load it into Power BI, and chart recalls by reason and month.</p>
+<div class="box myth"><b>Free is not always free</b>Free learning does not always mean a free certificate. The GoLeanSixSigma white belt certificate needs renewal every two years, and renewal is paid. Microsoft's PL-300 exam is paid though the learning material is free. A project on public data is stronger than a certificate alone, because it shows the work.</div>`,
+key:["ALCOA: Attributable, Legible, Contemporaneous, Original, Accurate; plus Complete, Consistent, Enduring, Available","Failures: testing into compliance, shared logins, deleted files, backdating, scrap-paper data","Record at the time, sign only for yourself, report errors openly","Power BI shows what happened; Six Sigma (DMAIC) decides what to fix","A public-data project (e.g. openFDA recalls in Power BI) beats a certificate alone"],
+check:[
+{q:"What does the \"C\" in ALCOA stand for?",o:["Contemporaneous","Complete","Consistent","Certified"],w:"Contemporaneous means recorded at the time the work is done. Complete and Consistent belong to the \"+\" extension."},
+{q:"Re-running a failing sample until it passes, with no documented reason, is called what?",o:["Testing into compliance","Method validation","Contemporaneous recording","Calibration"],w:"This is a classic data-integrity failure described in FDA inspection reports and warning letters."},
+{q:"Why are shared logins a data-integrity problem?",o:["Nobody is attributable for the work","They slow down instruments","They violate USP <711>","They cost more money"],w:"Attributable means we can tell who did what and when. A shared password destroys that."},
+{q:"What are the five phases of DMAIC?",o:["Define, Measure, Analyse, Improve, Control","Design, Make, Assess, Inspect, Certify","Detect, Monitor, Audit, Investigate, Close","Document, Maintain, Approve, Implement, Check"],w:"DMAIC is the core Six Sigma improvement cycle."},
+{q:"Which statement about free learning is correct?",o:["Free learning does not always include a free certificate","All free courses give free lifetime certificates","Exams like PL-300 are free","Certificates never expire"],w:"Always read the course page: the GoLeanSixSigma white belt renewal is paid, and PL-300 is a paid exam."}
+]});
+
+MODS.push({
+id:7, tag:"Level 3 · Stand out", title:"Registries, FDA inspections and free courses", mins:18,
+sub:"Use public trial registries and FDA data to build projects, and choose free courses wisely.",
+obj:["Name major clinical trial registries and what each is for","Describe the steps of an FDA inspection and its classifications","Know where FDA inspection decisions are public","Choose and write free certificate courses on a resume"],
+body:`
+<h3>Trial registries: the public notice boards</h3>
+<p>Before a race, runners announce the route and rules so nobody moves the finish line after seeing who is winning. A trial registry does that for medicine studies.</p>
+<div class="tw"><table><tr><th>Website</th><th>Use it to…</th></tr>
+<tr><td>ClinicalTrials.gov</td><td>Search worldwide trials by drug or disease</td></tr>
+<tr><td>CTRI (India, ICMR-NIMS)</td><td>Find trials registered in India</td></tr>
+<tr><td>WHO ICTRP</td><td>Search many registries together</td></tr>
+<tr><td>EU Clinical Trials (CTIS)</td><td>Trials authorised in Europe</td></tr>
+<tr><td>ISRCTN</td><td>UK and international registry</td></tr>
+<tr><td>Drugs@FDA</td><td>See approved drugs and review documents</td></tr></table></div>
+<p>In India, trials must be registered with CTRI before the first participant is enrolled, under the New Drugs and Clinical Trials Rules 2019 and ICMR policy. Registries show phase, sponsor, sites, eligibility and primary endpoint.</p>
+<h3>A 60-minute registry exercise</h3>
+<ol><li>Pick a drug you studied, for example metformin.</li><li>Filter on ClinicalTrials.gov: Phase 3, completed.</li><li>Read arms, primary endpoint, sample size, eligibility.</li><li>Compare with Indian trials in CTRI.</li><li>Write three findings in a one-page note.</li></ol>
+<div class="box do"><b>Resume line</b>Reviewed 10 registered Phase 3 antidiabetic trials on ClinicalTrials.gov and CTRI, comparing primary endpoints, sample sizes and eligibility criteria.</div>
+<p>Extra challenge: check whether outcomes reported later match the endpoints registered at the start. Differences are called <em>outcome switching</em>, a known research-quality issue.</p>
+<h3>How an FDA inspection works</h3>
+<p>Like a school inspector who asks to see registers, watches a class, questions teachers, lists problems, and the school must reply.</p>
+<ol><li><strong>Arrive:</strong> investigator shows credentials and Form FDA 482</li><li><strong>Walk:</strong> tour of plant and labs</li><li><strong>Review:</strong> SOPs, batch records, audit trails, OOS</li><li><strong>Ask:</strong> staff interviews in QC, QA, production</li><li><strong>Close:</strong> Form FDA 483 lists observations</li></ol>
+<p>After the visit the company replies (FDA asks for a response within <strong>15 business days</strong>). FDA writes an Establishment Inspection Report and classifies the outcome:</p>
+<table><tr><th>Class</th><th>Meaning</th></tr><tr><td>NAI</td><td>No Action Indicated</td></tr><tr><td>VAI</td><td>Voluntary Action Indicated</td></tr><tr><td>OAI</td><td>Official Action Indicated, which may lead to a Warning Letter</td></tr></table>
+<p>Types: routine surveillance, pre-approval inspection (before a new product is approved) and for-cause inspection (after a complaint, recall or tip).</p>
+<h3>Where FDA's decisions are public</h3>
+<ul><li><strong>FDA Data Dashboard: Inspections</strong> (datadashboard.fda.gov): inspections by year, product type and class, citations, published 483s. Updated weekly, but excludes some types such as pre-approval inspections.</li>
+<li><strong>Inspection Classification Database</strong></li><li><strong>Warning Letters:</strong> searchable letters with violations and responses</li><li><strong>Import Alerts:</strong> sites whose products are stopped at the border</li><li><strong>Recalls:</strong> notices and reasons</li></ul>
+<h3>Read a warning letter like a detective</h3>
+<p>Pick a letter and filter by year; note the header (who, which site, dates); list each violation and its 21 CFR citation; tag each with a system (quality, lab, production, equipment); ask what you would have done differently.</p>
+<table><tr><th>Citation</th><th>Topic</th></tr><tr><td>211.22</td><td>Quality unit duties</td></tr><tr><td>211.68</td><td>Computers and automated equipment</td></tr><tr><td>211.100</td><td>Written procedures</td></tr><tr><td>211.192</td><td>Investigations of failures</td></tr><tr><td>211.194</td><td>Laboratory records</td></tr></table>
+<div class="box do"><b>Resume line</b>Analysed 15 FDA warning letters to drug manufacturers, grouped the cited 21 CFR 211 sections and presented the top three recurring themes to faculty.</div>
+<h3>Free courses, used wisely</h3>
+<div class="tw"><table><tr><th>Provider</th><th>Offers</th></tr>
+<tr><td>WHO OpenWHO</td><td>Free online courses; many give a Record of Achievement or Confirmation of Participation</td></tr>
+<tr><td>NIDA GCP (CTN)</td><td>Online ICH-GCP course, revised April 2026 for ICH E6(R3); certificate on completion</td></tr>
+<tr><td>ICH, EMA, US FDA</td><td>Free guidelines (E6, Q8 to Q14, M4 CTD), assessment reports, training pages</td></tr>
+<tr><td>ICMR, CTRI, CDSCO, IPC</td><td>Ethical guidelines, trial registry, NDCT Rules 2019, Schedule M, IP and PvPI</td></tr>
+<tr><td>SWAYAM and NPTEL</td><td>Learning is free; the proctored exam certificate usually has a fee</td></tr></table></div>
+<p><strong>Quality over a pile of certificates:</strong> pick three (one GCP or regulatory course, one domain course for your target role, one data or tool course). Write course name, issuer, year and certificate ID or link. Turn each course into one project line. GCP training usually needs refreshing every few years, so note the year.</p>
+<p>Example: <em>ICH-GCP online training, NIDA Clinical Trials Network, 2026 | Pharmacovigilance basics, online course, 2025 | Power BI learning path, Microsoft Learn, 2026.</em> Websites change: if a link has moved, search the organisation or dataset title.</p>`,
+key:["Registries: ClinicalTrials.gov, CTRI (India), WHO ICTRP, CTIS, ISRCTN; Drugs@FDA for approvals","Inspection: arrive (Form 482), walk, review, ask, close (Form 483); reply in 15 business days","Classifications: NAI, VAI, OAI; OAI may lead to a Warning Letter","Public FDA data: Dashboard, Classification Database, Warning Letters, Import Alerts, Recalls","Pick three relevant courses, write issuer and year, and attach a project line to each"],
+check:[
+{q:"Which registry should you use to find trials registered in India?",o:["CTRI","ISRCTN","CTIS","Drugs@FDA"],w:"CTRI (hosted by ICMR-NIMS) lists Indian trials. CTIS is European and ISRCTN is UK/international."},
+{q:"What is Form FDA 483?",o:["The list of inspection observations issued at the close","The credentials shown at arrival","A warning letter","A recall notice"],w:"Form 482 is the notice at arrival; Form 483 lists observations at close."},
+{q:"Which FDA classification may lead to a Warning Letter?",o:["OAI","NAI","VAI","None of them"],w:"Official Action Indicated (OAI) may lead to a Warning Letter."},
+{q:"Which 21 CFR 211 section is about laboratory records?",o:["211.194","211.22","211.68","211.100"],w:"211.194 covers laboratory records. 211.22 is quality unit, 211.68 computers/equipment, 211.100 written procedures."},
+{q:"What does the course advise when choosing free courses for your resume?",o:["Pick three relevant ones and attach a project line to each","Collect as many as possible","Avoid courses without a fee","List courses you only started"],w:"Twenty small certificates look like collecting; three relevant ones with matching projects look like direction. Only list courses you completed."}
+]});
+MODS.push({
+id:8, tag:"Level 4 · Advanced", title:"Tailor, LinkedIn, interview and your 90-day plan", mins:15,
+sub:"Customise your resume for each job, align LinkedIn, prepare for questions, and run the final checks.",
+obj:["Apply the five steps to tailor a master resume","Write a matching headline and summary","Align LinkedIn with the resume","Prepare answers to common interview questions and plan 90 days"],
+body:`
+<h3>Tailor one master resume to every job</h3>
+<p>You keep one big toy box (the master resume). For each job you pick only the toys that fit that game.</p>
+<ol><li>Read the job description and mark must-haves.</li><li>Map each must-have to one true proof line, or note a gap.</li><li>Reorder so matching projects and skills come first.</li><li>Rename your headline to the job title.</li><li>Save as <code>Name_Role.pdf</code> and proofread.</li></ol>
+<p>Gaps are information, not failure. If three of ten must-haves are missing, apply anyway with an honest resume, or close the gap with a free course first.</p>
+<h3>Headline and summary that match the job</h3>
+<div class="box"><b>Headline formula: Degree | Target role | 2 or 3 matching keywords</b>B.Pharm Graduate | Quality Control Analyst | HPLC, UV, GLP<br>Pharm.D | Pharmacovigilance Associate | ICSR, MedDRA, WHO-UMC</div>
+<div class="box do"><b>Summary formula: WHO + PROOF + TARGET</b>B.Pharm graduate with industrial training in quality control, hands-on with HPLC and UV, and a validated metformin UV method project. Seeking a QC Analyst role where I can apply GLP and documentation discipline.</div>
+<p>Keep it to three lines. Skip "hard-working, passionate team player"; the proof does that job.</p>
+<h3>Make LinkedIn match your resume</h3>
+<ul><li><strong>Headline:</strong> same formula as the resume, not just "Student".</li><li><strong>About:</strong> your three-line summary with keywords in natural sentences.</li><li><strong>Skills and licences:</strong> add those from your resume.</li><li><strong>Job alerts:</strong> search exact titles like "Quality Control Analyst" and save alerts.</li><li><strong>People:</strong> follow companies, connect with alumni and recruiters in your domain.</li><li><strong>Short message:</strong> name, degree, role you want, one proof line, a thank you.</li></ul>
+<p>Your resume and LinkedIn must not disagree on dates, titles or degrees. HR compares them.</p>
+<h3>Everything on the resume can be asked</h3>
+<div class="tw"><table><tr><th>Question</th><th>Answer frame</th></tr>
+<tr><td>Tell me about yourself</td><td>Present (degree, focus), past (training, project), future (this role)</td></tr>
+<tr><td>What is data integrity?</td><td>The attendance-register analogy, then ALCOA in one line each</td></tr>
+<tr><td>Why USP &lt;711&gt;?</td><td>What it tests, which apparatus you used, what the result meant</td></tr>
+<tr><td>What did you learn in your project?</td><td>Problem, method, one result, one lesson (STAR)</td></tr>
+<tr><td>Difference between deviation and OOS?</td><td>Deviation: departure from procedure. OOS: result outside specification.</td></tr>
+<tr><td>Why should we hire you?</td><td>Two skills from the job description, each with one proof</td></tr></table></div>
+<div class="box tip"><b>Rule</b>If you cannot explain a line in two minutes, remove it from the resume. Interviewers often ask about the third line from the top of each section.</div>
+<h3>A 90-day plan for one semester</h3>
+<table><tr><th>Days</th><th>Focus</th><th>Do</th></tr>
+<tr><td>1 to 30</td><td>Foundation</td><td>Pick one target role, write the master resume, make the ATS version, finish one GCP course</td></tr>
+<tr><td>31 to 60</td><td>Stand out</td><td>Read USP and data integrity sources, one registry exercise, one warning-letter review, A1 in a language or Power BI basics</td></tr>
+<tr><td>61 to 90</td><td>Apply</td><td>Tailor 10 applications, polish LinkedIn, two mock interviews, track results in a sheet</td></tr></table>
+<p>Keep the plan small: finishing two or three items properly beats starting twelve.</p>
+<h3>Final check before you press Apply</h3>
+<div class="cols"><div class="box do"><b>The robot test</b><ul><li>One column, plain headings</li><li>Text-based PDF or DOCX</li><li>Job title and top keywords present</li><li>Full form plus abbreviation once</li><li>Dates consistent</li><li>File named Name_Role</li></ul></div>
+<div class="box do"><b>The human test</b><ul><li>Headline names the target role</li><li>Top third of page one shows the fit</li><li>Every bullet has action, tool, result</li><li>Everything true and explainable</li><li>No spelling errors in drug names</li><li>Registration or exams shown where needed</li></ul></div></div>
+<p class="remember"><strong>Remember:</strong> a resume is true, clear and matched to the job. Build the plain version, add one skill layer that others lack, and keep learning in public with free regulator resources.</p>`,
+key:["Tailor: mark must-haves, map to true proof, reorder, rename headline, save and proofread","Headline = Degree | Target role | 2 or 3 keywords; Summary = WHO + PROOF + TARGET","LinkedIn and resume must agree on dates, titles and degrees","If you cannot explain a line in two minutes, remove it","90 days: foundation, stand out, apply; run the robot and human tests every time"],
+check:[
+{q:"What is the first step in tailoring your resume to a job?",o:["Read the job description and mark the must-haves","Rewrite your hobbies section","Change the font","Add more certificates"],w:"Tailoring starts from the job's must-haves, which you then map to true proof lines."},
+{q:"Which is the correct headline formula?",o:["Degree | Target role | 2 or 3 matching keywords","Name | Age | Hobbies","Objective | Salary | City","Student | Fresher | Hardworking"],w:"Example: B.Pharm Graduate | Quality Control Analyst | HPLC, UV, GLP."},
+{q:"What is the difference between a deviation and an OOS?",o:["Deviation is a departure from procedure; OOS is a result outside specification","Deviation is a failed audit; OOS is a failed exam","They are the same thing","OOS is a departure from procedure; deviation is a failing batch"],w:"Deviation: departure from procedure. OOS: result outside specification."},
+{q:"What should you do with a resume line you cannot explain in two minutes?",o:["Remove it","Keep it and bluff","Move it into a table","Write it in bold"],w:"Anything on the resume can be asked in an interview. If you cannot explain it, remove it."},
+{q:"What belongs in days 61 to 90 of the plan?",o:["Tailor 10 applications, polish LinkedIn, two mock interviews, track results","Pick a target role and write the master resume","Read USP sources and do a registry exercise","Finish one GCP course"],w:"Days 61 to 90 are the Apply phase. Days 1 to 30 are Foundation and days 31 to 60 are Stand out."}
+]});
+
+EXAM.push(
+// Module 1
+{m:1,q:"A claim says an ATS automatically rejects 75 percent of resumes. What does the course say?",o:["There is no reliable public evidence for that figure","It is confirmed by FDA data","It is true only for pharma jobs","It is true for government jobs only"],w:"The course corrects this myth. The real risk is that a badly formatted resume is parsed wrongly and never found in a search."},
+{m:1,q:"At which step does the recruiter filter by words like \"HPLC\", \"GMP\" or a city?",o:["Search","Upload","Parse","Match"],w:"In step 4, Search, recruiters filter stored resumes by keyword, city and degree."},
+{m:1,q:"The \"6 to 8 seconds\" HR skim figure is best described as:",o:["A rule of thumb whose lesson is that the top third of page one matters most","An exact law proven by studies","A rule only for freshers","A rule only for ATS parsing"],w:"It is a rule of thumb, not a law. The takeaway: put your strongest matching information at the top."},
+// Module 2
+{m:2,q:"Why should a parser-friendly resume avoid two columns?",o:["Skills may get mixed into the job history","Two columns are not allowed in PDF","They make the file too large","They hide the file name"],w:"A parser reading across two columns can mix your skills into your job history."},
+{m:2,q:"A fresher has no experience. Which sections carry the resume?",o:["Education and projects","Publications and patents","Registration number only","Hobbies and interests"],w:"For a fresher the section that best proves ability is education plus relevant projects."},
+{m:2,q:"Which date format does the course recommend?",o:["Jun 2025 – Aug 2025","Summer last year","6/25 to 8","2025ish"],w:"Clear, consistent dates like \"Jun 2025 – Aug 2025\" are easy for parsers and recruiters."},
+// Module 3
+{m:3,q:"Which of these is the best way to show a keyword like Good Manufacturing Practice?",o:["Write the full form once, with the abbreviation (GMP) after it","Use only the abbreviation in white text","Repeat it 30 times","Avoid mentioning it"],w:"Write the full form once so both humans and keyword searches catch it."},
+{m:3,q:"In the example bullet about UV method validation, what is the \"Result\" part?",o:["Linearity r² of 0.999 across 2 to 12 µg/mL","Validated a UV method","For metformin HCl","Using ICH Q2(R1) parameters"],w:"The result is the measurable output; \"validated\" is the action, \"a UV method for metformin HCl\" the task, and ICH Q2(R1) the standard."},
+{m:3,q:"Why are inflated claims risky in pharma?",o:["Background checks exist and honesty is a compliance value","They make the resume too long","ATS cannot read numbers","They cost extra on portals"],w:"In a regulated industry honesty is a compliance value, so exaggeration is a serious red flag."},
+{m:3,q:"Which weak line best matches the strong line \"Detailed 3 products to doctors on a weekly territory plan and submitted call reports\"?",o:["Visited doctors","Helped in pharmacy","Did HPLC work","Worked on ADRs"],w:"This is the Medical Rep before-and-after pair in the course."},
+// Module 4
+{m:4,q:"The search words \"CTD, eCTD, CDSCO, ICH, ANDA\" belong to which domain?",o:["Regulatory Affairs","Production","Medical Rep / Sales","Hospital / Retail"],w:"These are Regulatory Affairs keywords. Production uses terms like cGMP, BMR and line clearance."},
+{m:4,q:"What does the course recommend for the domain table?",o:["Show only the one or two rows matching your target role","Copy every row onto your resume","Choose rows at random","Show only the search words and no proof"],w:"Show the rows that match your target, with proof from training or projects."},
+{m:4,q:"Which soft skill is described as \"record what happened, even when the result is bad\"?",o:["Integrity","Teamwork","Communication","Ownership and time"],w:"Integrity is a compliance requirement in regulated industries, not only a soft skill."},
+{m:4,q:"Which receipt line best proves \"quick learner\"?",o:["Completed an ICH-GCP online course and applied it in a protocol review project","Fast and adaptable","Always eager to learn","Learns anything within hours"],w:"A receipt names the course and the application. Adjectives are claims, not evidence."},
+// Module 5
+{m:5,q:"What is a \"T-shaped profile\" in this course?",o:["A strong pharmacy core plus one visible extra skill","Skills only in one narrow area","A resume with a T-shaped layout","Having every possible extra skill"],w:"You do not need all layers; pick one or two that fit the target role and go deep."},
+{m:5,q:"Which USP chapter is relevant to every HPLC and GC method?",o:["<621> Chromatography","<905> Uniformity of dosage units","<71> Sterility tests","<232> Elemental impurities"],w:"<621> covers chromatography, so it is behind every HPLC and GC method."},
+{m:5,q:"Which statement about languages is correct?",o:["A language is a tiebreaker, not a replacement for pharmacy skills","A language replaces the pharmacy degree","Only German helps in pharma","Regional languages have no value in India"],w:"Beginner levels are fine if true, and regional languages matter, e.g. trial consent must be in a language the participant understands."},
+{m:5,q:"Which resume line applies USP knowledge at the 'Used' or 'Applied' level?",o:["Applied USP <621> system suitability parameters while running an HPLC assay","Interested in USP chapters","USP expert","Knows all USP chapters"],w:"The line states a specific chapter and what you did with it, which you can defend in an interview."},
+// Module 6
+{m:6,q:"In the attendance-register analogy, signing in pen at the time with no whitener corresponds to:",o:["Contemporaneous and attributable records","Backdating","Testing into compliance","Deleting audit trails"],w:"Signing for yourself (attributable) and at the time (contemporaneous) is exactly what data integrity requires."},
+{m:6,q:"What is the main idea behind Six Sigma in the tablet example?",o:["Shrink the scatter so tablets are nearly the same","Make tablets as large as possible","Test only one tablet per batch","Remove all documentation"],w:"If weights scatter widely, some tablets are too weak or strong; Six Sigma reduces variation."},
+{m:6,q:"Which is a good mini-project from the course?",o:["Load openFDA drug recall data into Power BI and chart recalls by reason and month","Copy a competitor's dashboard","Download paid data without permission","Make a dashboard with invented numbers"],w:"Public openFDA data lets you build a real project and show the work."},
+{m:6,q:"Which pair correctly contrasts Power BI and Six Sigma?",o:["Power BI shows what happened; Six Sigma helps decide what to fix","Power BI fixes the process; Six Sigma draws charts","Both are only certificates","Both are only for sales roles"],w:"This contrast is the key teaching point of the slide."},
+// Module 7
+{m:7,q:"What is outcome switching?",o:["Reported outcomes that differ from the endpoints registered at the start","Switching the trial sponsor","Changing hospitals mid-trial","Switching from Phase 2 to Phase 3"],w:"Checking registered endpoints against later reports is an extra challenge for advanced students."},
+{m:7,q:"What is the FDA's requested timeframe for a company to respond after an inspection?",o:["15 business days","24 hours","6 months","One year"],w:"FDA asks for a response within 15 business days, then writes an Establishment Inspection Report."},
+{m:7,q:"What limitation does the course note for the FDA Data Dashboard on inspections?",o:["It excludes some inspection types such as pre-approval inspections","It is updated once every five years","It contains only Indian companies","It lists no classifications"],w:"The dashboard is updated weekly but is not a complete list of everything FDA has done."},
+{m:7,q:"What is true of SWAYAM and NPTEL courses?",o:["Learning is free; the proctored exam certificate usually has a fee","Everything including certificates is free","They are paid in full","They only offer foreign language courses"],w:"This is the 'free to study is not always a free certificate' rule."},
+// Module 8
+{m:8,q:"What should the summary formula \"WHO + PROOF + TARGET\" contain?",o:["Your profile, a proof item, and the role you seek","Your age, marks and city","Your hobbies and goals","A list of your referees"],w:"Example: B.Pharm graduate with QC training and a validated UV method, seeking a QC Analyst role."},
+{m:8,q:"Why must LinkedIn and your resume agree?",o:["HR compares them for dates, titles and degrees","LinkedIn deletes mismatched profiles","ATS software refuses mismatches","Only recruiters from abroad check them"],w:"Any disagreement raises doubts about honesty, which matters a lot in pharma."},
+{m:8,q:"If three of ten must-haves are missing, what does the course suggest?",o:["Apply anyway with an honest resume, or close the gap with a free course","Add the missing skills even if untrue","Do not apply at all","Hide the job description"],w:"Gaps are information, not failure. Never invent skills."},
+{m:8,q:"Which item belongs to the human test on the final checklist?",o:["Top third of page one shows the fit","Text-based PDF or DOCX","Plain headings in one column","File named Name_Role"],w:"The other items belong to the robot test."}
+);
+
+</script>
+<script>
+(function(){
+"use strict";
+var PASS_PCT=60, N=EXAM.length, PASS=Math.ceil(N*PASS_PCT/100);
+var TITLE="Master ATS Resume Writing for Pharmacy Students";
+var AUTHORS="Dr. Babaso Udugade and Mrs. Swati Udugade";
+var ORG="Maharashtra Academy of Skills and Knowledge";
+var KEY="atsCourse.v1";
+var S={done:{},checks:{},best:null,passed:false,name:""};
+try{var raw=localStorage.getItem(KEY);if(raw){var p=JSON.parse(raw);for(var k in p)S[k]=p[k];}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function $(s,r){return (r||document).querySelector(s);}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;var t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function shuffle(a,r){r=r||Math.random;a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(r()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function opts(q,r){return shuffle(q.o.map(function(t,i){return {t:t,orig:i};}),r);}
+var L="ABCD";
+function doneCount(){return MODS.filter(function(m){return S.done[m.id];}).length;}
+function allDone(){return doneCount()===MODS.length;}
+
+/* theme */
+var root=document.documentElement;
+try{var th=localStorage.getItem("atsCourse.theme");if(th)root.setAttribute("data-theme",th);}catch(e){}
+$("#theme").onclick=function(){var cur=root.getAttribute("data-theme");if(!cur){cur=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}var nx=cur==="dark"?"light":"dark";root.setAttribute("data-theme",nx);try{localStorage.setItem("atsCourse.theme",nx);}catch(e){}};
+$("#menu").onclick=function(){var n=$("#nav");var o=n.classList.toggle("open");this.setAttribute("aria-expanded",o);};
+
+/* nav + progress */
+function renderNav(route){
+ var h='<a href="#home"'+(route==="home"?' aria-current="page"':'')+'>Overview</a><div class="sep">Modules</div>';
+ MODS.forEach(function(m){var r="m"+m.id;h+='<a href="#'+r+'"'+(route===r?' aria-current="page"':'')+'><span>'+m.id+'.</span><span>'+esc(m.title)+'</span><span class="tick" aria-label="'+(S.done[m.id]?'completed':'not completed')+'">'+(S.done[m.id]?'✓':'')+'</span></a>';});
+ h+='<div class="sep">Assessment</div><a href="#exam"'+(route==="exam"?' aria-current="page"':'')+'>Final exam <span class="tick">'+(allDone()?(S.passed?'✓':''):'🔒')+'</span></a><a href="#cert"'+(route==="cert"?' aria-current="page"':'')+'>Certificate <span class="tick">'+(S.passed?'✓':'🔒')+'</span></a>';
+ $("#nav").innerHTML=h;
+ var steps=MODS.length+1, got=doneCount()+(S.passed?1:0), pct=Math.round(got/steps*100);
+ $("#pbi").style.width=pct+"%";$("#pb").setAttribute("aria-valuenow",pct);$("#pl").textContent=pct+"% complete";
+}
+
+/* routes */
+var ex=null; // exam attempt state
+function route(){
+ var h=(location.hash||"#home").slice(1);
+ $("#nav").classList.remove("open");$("#menu").setAttribute("aria-expanded","false");
+ var m=$("#main");
+ if(h==="home")home(m);
+ else if(/^m\d+$/.test(h)){var mod=MODS.filter(function(x){return "m"+x.id===h;})[0];mod?module_(m,mod):home(m);}
+ else if(h==="exam")exam(m);
+ else if(h==="cert")cert(m);
+ else home(m);
+ renderNav(h in {home:1,exam:1,cert:1}||/^m\d+$/.test(h)?h:"home");
+ window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+
+function home(m){
+ var h='<section class="hero"><span class="tag" style="background:rgba(255,255,255,.18);color:#fff">Self-study course</span><h1>'+TITLE+'</h1><p>From basics to advanced: what HR really sees, what makes you different, and the free websites and certificate courses that get you there. For B.Pharm, M.Pharm, Pharm.D and D.Pharm students.</p><a class="btn primary big" href="#m'+(firstOpen())+'" style="text-decoration:none;display:inline-block">'+(doneCount()?'Continue course':'Start course')+'</a></section>';
+ h+='<div class="card"><h2>How this course works</h2><ol><li>Read '+MODS.length+' short modules (about '+MODS.reduce(function(a,b){return a+b.mins;},0)+' minutes in total).</li><li>Answer the 5-question knowledge check at the end of each module. It is not graded.</li><li>Mark each module complete to unlock the <strong>final exam</strong>: '+N+' questions, pass mark '+PASS_PCT+'% ('+PASS+' of '+N+'), unlimited retakes, correct answers shown after you submit.</li><li>Pass to get a printable self-study certificate of completion.</li></ol></div>';
+ h+='<div class="grid">';
+ MODS.forEach(function(x){h+='<a class="mcard" href="#m'+x.id+'"><span class="tag">'+esc(x.tag)+'</span><b>'+x.id+'. '+esc(x.title)+'</b><span class="muted" style="font-size:.88rem">'+esc(x.sub)+'</span><div class="muted" style="font-size:.8rem;margin-top:6px">'+x.mins+' min · '+(S.done[x.id]?'✓ Completed':'Not completed')+'</div></a>';});
+ h+='</div><p class="foot">Designed and created by '+AUTHORS+'. © '+ORG+'. Self-study material; this is not an accredited qualification.</p>';
+ m.innerHTML=h;
+}
+function firstOpen(){for(var i=0;i<MODS.length;i++)if(!S.done[MODS[i].id])return MODS[i].id;return 1;}
+
+function module_(m,mod){
+ var h='<article class="card"><span class="tag">'+esc(mod.tag)+' · Module '+mod.id+' of '+MODS.length+'</span><h2>'+esc(mod.title)+'</h2><p class="muted">'+esc(mod.sub)+' · about '+mod.mins+' minutes</p>';
+ h+='<div class="obj"><b>Learning objectives</b><ul>'+mod.obj.map(function(o){return '<li>'+esc(o)+'</li>';}).join('')+'</ul></div>';
+ h+=mod.body;
+ h+='<div class="keypts"><b class="serif">Key points</b><ul>'+mod.key.map(function(k){return '<li>'+esc(k)+'</li>';}).join('')+'</ul></div></article>';
+ h+='<section class="card" id="chk"><h2 style="font-size:1.4rem">Knowledge check</h2><p class="muted">Five quick questions. Not graded: use them to practise.</p><div id="chkq"></div><div class="sticky" style="position:static;margin-top:12px"><span id="chkscore" aria-live="polite"></span><button class="btn" id="chkretry">Retry this check</button></div></section>';
+ h+='<div class="card" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">';
+ var i=MODS.indexOf(mod);
+ if(i>0)h+='<a class="btn" href="#m'+MODS[i-1].id+'" style="text-decoration:none">← Previous</a>';
+ h+='<button class="btn primary big" id="markdone" aria-pressed="'+(!!S.done[mod.id])+'">'+(S.done[mod.id]?'✓ Completed (click to undo)':'Mark module complete')+'</button>';
+ if(i<MODS.length-1)h+='<a class="btn" href="#m'+MODS[i+1].id+'" style="text-decoration:none;margin-left:auto">Next →</a>';
+ else h+='<a class="btn" href="#exam" style="text-decoration:none;margin-left:auto">Go to final exam →</a>';
+ h+='</div>';
+ m.innerHTML=h;
+ $("#markdone").onclick=function(){S.done[mod.id]=!S.done[mod.id];save();module_(m,mod);renderNav("m"+mod.id);$("#markdone").focus();};
+ drawCheck(mod);
+ $("#chkretry").onclick=function(){S.checks[mod.id]={};save();drawCheck(mod);};
+}
+function drawCheck(mod){
+ var ans=S.checks[mod.id]||(S.checks[mod.id]={});
+ var h="";
+ mod.check.forEach(function(q,qi){
+  var os=opts(q,rng(mod.id*100+qi+7)), a=ans[qi], has=(a!==undefined);
+  h+='<fieldset class="q"><legend>'+(qi+1)+'. '+esc(q.q)+'</legend>';
+  os.forEach(function(o,oi){
+   var cls="opt",badge="";
+   if(has){ if(o.orig===0){cls+=" correct";badge='<span class="badge">Correct</span>';} else if(o.orig===a){cls+=" wrong";badge='<span class="badge">Your answer</span>';} }
+   h+='<button type="button" class="'+cls+'" data-q="'+qi+'" data-o="'+o.orig+'"'+(has?' disabled':'')+' aria-pressed="'+(has&&o.orig===a)+'"><span class="l">'+L[oi]+'</span><span>'+esc(o.t)+'</span>'+badge+'</button>';
+  });
+  if(has)h+='<div class="why"><b>'+(a===0?'Correct. ':'Not quite. ')+'</b>'+esc(q.w)+'</div>';
+  h+='</fieldset>';
+ });
+ $("#chkq").innerHTML=h;
+ var n=Object.keys(ans).length, c=0;for(var k in ans)if(ans[k]===0)c++;
+ $("#chkscore").textContent=n?("Score so far: "+c+" / "+mod.check.length+" ("+n+" answered)"):"Not started";
+ Array.prototype.forEach.call(document.querySelectorAll("#chkq .opt"),function(b){b.onclick=function(){ans[b.dataset.q]=parseInt(b.dataset.o,10);save();drawCheck(mod);var nb=document.querySelector('#chkq fieldset:nth-of-type('+(parseInt(b.dataset.q,10)+1)+') .why');};});
+}
+
+/* EXAM */
+function startExam(){
+ var qs=shuffle(EXAM).map(function(q){return {q:q,os:opts(q)};});
+ ex={qs:qs,ans:{},submitted:false,filter:"all"};
+}
+function exam(m){
+ if(!allDone()){
+  m.innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem">🔒</div><h2>Final exam is locked</h2><p>Complete all '+MODS.length+' modules to unlock it. You have completed <strong>'+doneCount()+' of '+MODS.length+'</strong>.</p><a class="btn primary big" href="#m'+firstOpen()+'" style="text-decoration:none">Go to Module '+firstOpen()+'</a></div>';return;
+ }
+ if(!ex){
+  m.innerHTML='<div class="card"><span class="tag">Final exam</span><h2>Test what you learned</h2><ul><li><strong>'+N+' questions</strong> drawn from all '+MODS.length+' modules, multiple choice.</li><li>Pass mark: <strong>'+PASS_PCT+'% ('+PASS+' of '+N+')</strong>.</li><li>Unlimited retakes. Questions and options are reshuffled each time.</li><li>After you submit, every question is shown with the correct answer and an explanation.</li></ul><p>Best score: <strong>'+(S.best===null?'none yet':S.best+' / '+N)+'</strong></p><button class="btn primary big" id="begin">Begin exam</button></div>';
+  $("#begin").onclick=function(){startExam();exam(m);window.scrollTo(0,0);};return;
+ }
+ if(ex.submitted){result(m);return;}
+ attempt(m);
+}
+function answeredCount(){return Object.keys(ex.ans).length;}
+function attempt(m){
+ var h='<div class="sticky"><strong id="cnt" aria-live="polite">'+answeredCount()+' / '+N+' answered</strong><button class="btn primary" id="submit">Submit exam</button></div>';
+ ex.qs.forEach(function(it,qi){
+  h+='<fieldset class="q"><legend>'+(qi+1)+'. '+esc(it.q.q)+'</legend>';
+  it.os.forEach(function(o,oi){h+='<button type="button" class="opt" data-q="'+qi+'" data-o="'+oi+'" aria-pressed="'+(ex.ans[qi]===oi)+'"><span class="l">'+L[oi]+'</span><span>'+esc(o.t)+'</span></button>';});
+  h+='</fieldset>';
+ });
+ h+='<div class="card"><button class="btn primary big" id="submit2">Submit exam</button></div>';
+ m.innerHTML=h;
+ Array.prototype.forEach.call(m.querySelectorAll(".opt"),function(b){b.onclick=function(){var qi=+b.dataset.q;ex.ans[qi]=+b.dataset.o;Array.prototype.forEach.call(b.parentNode.querySelectorAll(".opt"),function(x){x.setAttribute("aria-pressed",x===b);});$("#cnt").textContent=answeredCount()+" / "+N+" answered";};});
+ function trySubmit(){
+  var left=N-answeredCount();
+  if(!left){finish();return;}
+  var r=$("#modalRoot");
+  r.innerHTML='<div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div><h3 id="mt" style="margin-top:0">Submit with unanswered questions?</h3><p>You have <strong>'+left+'</strong> unanswered question'+(left>1?'s':'')+'. They will be marked incorrect.</p><div style="display:flex;gap:10px;justify-content:flex-end"><button class="btn" id="mc">Keep answering</button><button class="btn primary" id="mo">Submit anyway</button></div></div></div>';
+  $("#mc").focus();$("#mc").onclick=function(){r.innerHTML="";};$("#mo").onclick=function(){r.innerHTML="";finish();};
+ }
+ $("#submit").onclick=trySubmit;$("#submit2").onclick=trySubmit;
+ function finish(){
+  ex.submitted=true;
+  var sc=score();
+  if(S.best===null||sc.total>S.best)S.best=sc.total;
+  if(sc.total>=PASS)S.passed=true;
+  save();exam(m);renderNav("exam");window.scrollTo(0,0);
+ }
+}
+function score(){
+ var total=0,by={};
+ MODS.forEach(function(x){by[x.id]={c:0,n:0};});
+ ex.qs.forEach(function(it,qi){
+  var a=ex.ans[qi],ok=(a!==undefined&&it.os[a].orig===0);
+  by[it.q.m].n++;if(ok){total++;by[it.q.m].c++;}
+ });
+ return {total:total,by:by};
+}
+function result(m){
+ var sc=score(),pass=sc.total>=PASS,short=PASS-sc.total;
+ var h='<div class="card" style="text-align:center"><div class="bigscore">'+sc.total+' / '+N+'</div><p class="muted">'+Math.round(sc.total/N*100)+'% · pass mark '+PASS_PCT+'% ('+PASS+' of '+N+')</p><span class="verdict '+(pass?'pass':'fail')+'" id="verdict">'+(pass?'PASSED':'NOT PASSED')+'</span>';
+ if(!pass)h+='<p>You were <strong>'+short+'</strong> answer'+(short>1?'s':'')+' short of the pass mark. Review below and try again.</p>';
+ else h+='<p>Well done! Your certificate is ready.</p>';
+ h+='<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn primary" id="retake">Retake exam</button>'+(S.passed?'<a class="btn" href="#cert" style="text-decoration:none">Get certificate</a>':'')+'</div><p class="muted" style="margin-bottom:0">Best score: '+S.best+' / '+N+'</p></div>';
+ h+='<div class="card"><h3 style="margin-top:0">Score by module</h3>';
+ MODS.forEach(function(x){var b=sc.by[x.id];var pc=b.n?Math.round(b.c/b.n*100):0;h+='<div class="mrow"><span>'+x.id+'. '+esc(x.title)+'</span><div class="bar"><i style="width:'+pc+'%"></i></div><span>'+b.c+'/'+b.n+'</span></div>';});
+ h+='</div><h3>Review your answers</h3><div class="filters" role="group" aria-label="Filter answers">';
+ [["all","All"],["incorrect","Incorrect only"],["correct","Correct only"]].forEach(function(f){h+='<button class="btn" data-f="'+f[0]+'" aria-pressed="'+(ex.filter===f[0])+'">'+f[1]+'</button>';});
+ h+='</div><div id="rev"></div>';
+ m.innerHTML=h;
+ $("#retake").onclick=function(){startExam();exam(m);window.scrollTo(0,0);};
+ Array.prototype.forEach.call(m.querySelectorAll(".filters .btn"),function(b){b.onclick=function(){ex.filter=b.dataset.f;Array.prototype.forEach.call(m.querySelectorAll(".filters .btn"),function(x){x.setAttribute("aria-pressed",x===b);});review();};});
+ review();
+}
+function review(){
+ var h="";
+ ex.qs.forEach(function(it,qi){
+  var a=ex.ans[qi],ok=(a!==undefined&&it.os[a].orig===0);
+  if(ex.filter==="incorrect"&&ok)return;if(ex.filter==="correct"&&!ok)return;
+  var mod=MODS.filter(function(x){return x.id===it.q.m;})[0];
+  h+='<fieldset class="q" data-ok="'+ok+'"><legend>'+(qi+1)+'. '+esc(it.q.q)+' <span class="muted" style="font-weight:400">'+(ok?'✓ Correct':(a===undefined?'✗ Unanswered':'✗ Incorrect'))+'</span></legend>';
+  it.os.forEach(function(o,oi){
+   var cls="opt",badge="";
+   if(o.orig===0){cls+=" correct";badge='<span class="badge">Correct answer</span>';}
+   else if(oi===a){cls+=" wrong";badge='<span class="badge">Your answer</span>';}
+   h+='<button type="button" class="'+cls+'" disabled><span class="l">'+L[oi]+'</span><span>'+esc(o.t)+'</span>'+badge+'</button>';
+  });
+  h+='<div class="why">'+esc(it.q.w)+' <a href="#m'+mod.id+'">Review Module '+mod.id+'</a></div></fieldset>';
+ });
+ $("#rev").innerHTML=h||'<p class="muted">Nothing to show for this filter.</p>';
+}
+
+/* CERT */
+function cert(m){
+ if(!S.passed){m.innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem">🔒</div><h2>Certificate locked</h2><p>Pass the final exam ('+PASS+' of '+N+' correct) to unlock your certificate.</p><a class="btn primary big" href="#exam" style="text-decoration:none">Go to exam</a></div>';return;}
+ var d=new Date().toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"});
+ m.innerHTML='<div class="card noprint"><h2>Your certificate</h2><label for="nm">Type your name as it should appear:</label><br><input type="text" id="nm" value="'+esc(S.name||"")+'" placeholder="Your full name" autocomplete="name"><p style="margin-top:12px"><button class="btn primary" id="print">Print / save as PDF</button></p></div><div id="certArea"><div class="cert"><p class="muted" style="letter-spacing:.2em;text-transform:uppercase">Self-study certificate of completion</p><h2>Certificate of Completion</h2><p>This is to certify that</p><div class="nm" id="cname">'+esc(S.name||"Your Name")+'</div><p>has completed the self-study course</p><h3 style="color:inherit;font-size:1.5rem;margin:.3em 0">'+TITLE+'</h3><p>and passed the final exam with a score of <strong>'+S.best+' / '+N+'</strong> (pass mark '+PASS_PCT+'%).</p><p style="margin-top:28px">'+d+'</p><p class="muted" style="font-size:.85rem">Course designed and created by '+AUTHORS+'<br>© '+ORG+'<br><em>Self-study certificate. Not an accredited qualification.</em></p></div></div>';
+ $("#nm").oninput=function(){S.name=this.value;save();$("#cname").textContent=this.value.trim()||"Your Name";};
+ $("#print").onclick=function(){window.print();};
+}
+
+route();
+})();
+</script>
+</body>
+</html>
